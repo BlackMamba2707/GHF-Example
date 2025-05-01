@@ -166,61 +166,51 @@ git config --global core.editor emacs
 
 Make a commit and commit message without opening an editor
 
-```
-git commit -m "add another exclamation"
-git commit --amend --> modifies the most recent commit
-git commit -m "Initial Commit" --allow-empty --> Create an empty commit, useful as a placeholder
-git commit -m "Message" --author="Author name <email@example.com>
-git checkout 2389429u42348923 --> checkout to a specific commit based on SHA hash
+```sh
+git commit -m "Commit message" # Commits staged changes with a message
+git commit -a -m "Commit message" # Automatically stages all tracked, modified files before the commit
+git commit --amend #modifies the most recent commit
+git commit -m "Initial Commit" --allow-empty #Create an empty commit, useful as a placeholder
+git commit -m "Message" --author="Author name <email@example.com>" #Commits with a specified author
+git checkout 2389429u42348923 #checkout a specific commit based on SHA hash
 ```
 ## Branches
 
 List of local branches
 
-```
-
+```sh
 git branch
-
 ```
 
 List of remote branches
 
-```
-
+```sh
 git branch -a
 
 ```
 
 Create a new branch
 
-```
-
+```sh
 git branch branch-name
 
 ```
 
 Checkout the branch
 
-```
-
+```sh
 git checkout dev
-
---- or ---
-
+# --- or ---
 git switch dev
 
 ```
 
 Create a new branch and checkout inline
 
-```
-
+```sh
 git checkout -b branch-name
-
---- or ---
-
+#--- or ---
 git switch -c branch-name
-
 ```
 
 ## Remotes
@@ -256,7 +246,6 @@ We can use the . to add al possible files.
 git add Readme.md
 
 git add .
-
 ```
 
 ## Reset
@@ -294,8 +283,7 @@ The gitconfig file is what stores your global configuration for git such as emai
 
 Showing the contents of our .gitconfig file
 
-```
-
+```sh
 git config --list
 
 ```
@@ -315,23 +303,17 @@ git config --global user.email johndoe@example.com
 git log will show recent git commits to the git tree
 
 ```sh
-
 git log
-
 ```
 
 If we want to see the logs in a shorter way
 
 ```sh
-
 git log --online
-
 ```
 
 When we want to push a repo to our remote origin
 
-```
-
+```sh
 git push
-
 ```
