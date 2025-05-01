@@ -167,9 +167,11 @@ git config --global core.editor emacs
 Make a commit and commit message without opening an editor
 
 ```
-
 git commit -m "add another exclamation"
-
+git commit --amend --> modifies the most recent commit
+git commit -m "Initial Commit" --allow-empty --> Create an empty commit, useful as a placeholder
+git commit -m "Message" --author="Author name <email@example.com>
+git checkout 2389429u42348923 --> checkout to a specific commit based on SHA hash
 ```
 ## Branches
 
