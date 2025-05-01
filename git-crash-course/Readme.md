@@ -227,7 +227,16 @@ git switch -c branch-name
 
 ## Stashing
 
+Use `git stash` when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the `HEAD` commit.
   
+
+```sh
+git stash
+git stash list 'List of stashs'
+git stash save [My custom name] 
+git stash apply
+git stash pop
+```
 
 ## Merging
 
