@@ -137,6 +137,16 @@ set a default repo
 ```sh
 gh repo set-default owner/repo
 ```
+
+List all issues
+```sh
+gh issue list
+```
+
+Remove an issue
+```sh
+gh issue delete issue {number}
+```
 ---
 
 #### For other platforms can take a look to the doc
