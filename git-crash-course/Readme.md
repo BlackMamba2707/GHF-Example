@@ -75,6 +75,7 @@ We'll need to create our own SSH rsa key pair
 ```sh
 
 ssh-keygen -t rsa
+ssh-keygen -t ed25519
 
 ```
 
