@@ -132,6 +132,11 @@ sudo apt install gh
 
 ```
 
+set a default repo
+
+```sh
+gh repo set-default owner/repo
+```
 ---
 
 #### For other platforms can take a look to the doc
